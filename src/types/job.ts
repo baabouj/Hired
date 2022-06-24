@@ -1,5 +1,5 @@
 import { Category, Company } from ".";
-import JobType from "../constants/job-type";
+import JobType from "../src/constants/job-type";
 
 export type Job = {
   id: number;

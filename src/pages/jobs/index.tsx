@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import { useState } from "react";
 import { useQuery } from "react-query";
-import { JobCard, Layout, Pagination, Spinner } from "../../components";
-import axios from "../../lib/axios";
-import { Job, JobsApiResponse } from "../../types";
+import { JobCard, Layout, Pagination, Spinner } from "@/components";
+import axios from "@/lib/axios";
+import { Job, JobsApiResponse } from "@/types";
 
 const fetchData = async (page: number): Promise<JobsApiResponse> => {
   let { data }: { data: JobsApiResponse } = await axios(

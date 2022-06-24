@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 
 import { NextPage } from "next";
-
 import { useRouter } from "next/router";
 
-import { AuthGuard, Button, Input, Layout } from "../components";
-import { useAuth } from "../hooks";
-
-import axios from "../lib/axios";
-
 import * as validator from "js-validation-helper";
+
+import { AuthGuard, Button, Input, Layout } from "@/components";
+import { useAuth } from "@/hooks";
+import axios from "@/lib/axios";
 
 const Login: NextPage = () => {
   const { setAuth, persist, setPersist } = useAuth();

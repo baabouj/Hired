@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 import { NextPage } from "next";
-
-import { Button, Input, Layout } from "../components";
-import { useAuth, useMiddleware } from "../hooks";
+import { useRouter } from "next/router";
 
 import * as validator from "js-validation-helper";
-import axios from "../lib/axios";
-import { useRouter } from "next/router";
+
+import { Button, Input, Layout } from "@/components";
+import { useAuth, useMiddleware } from "@/hooks";
+import axios from "@/lib/axios";
 
 const Signup: NextPage = () => {
   useMiddleware({ middleware: "guest" });

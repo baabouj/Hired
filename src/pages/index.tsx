@@ -1,10 +1,4 @@
 import type { NextPage } from "next";
-import { Button, CategoryCard, JobCard, Layout, StepCard } from "../components";
-
-import Lottie from "lottie-react";
-import hiredAnimation from "../assets/lottie/hired.json";
-import companyAnimation from "../assets/lottie/company.json";
-import bubblesAnimation from "../assets/lottie/bubbles.json";
 
 import { CgIfDesign, CgNotes } from "react-icons/cg";
 import {
@@ -16,8 +10,16 @@ import {
 import { BsPeople } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 import { TbAward } from "react-icons/tb";
-import axios from "../lib/axios";
-import { Job, JobsApiResponse } from "../types";
+
+import Lottie from "lottie-react";
+
+import hiredAnimation from "@/assets/lottie/hired.json";
+import companyAnimation from "@/assets/lottie/company.json";
+import bubblesAnimation from "@/assets/lottie/bubbles.json";
+
+import { Button, CategoryCard, JobCard, Layout, StepCard } from "@/components";
+import axios from "@/lib/axios";
+import { Job, JobsApiResponse } from "@/types";
 
 const Home: NextPage<any> = ({ jobs }) => {
   return (

@@ -3,11 +3,11 @@ import { useState } from "react";
 import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
 
-import { Button, Layout } from "../../components";
-import { useAuth, useAxiosPrivate } from "../../hooks";
-import axios from "../../lib/axios";
-import { Job } from "../../types";
-import BACKEND_API_URL from "../../constants/backend-api-url";
+import { Button, Layout } from "@/components";
+import { useAuth, useAxiosPrivate } from "@/hooks";
+import axios from "@/lib/axios";
+import { Job } from "@/types";
+import BACKEND_API_URL from "@/constants/backend-api-url";
 
 type Props = {
   job: Job;
